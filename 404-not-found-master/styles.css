@@ -1,0 +1,118 @@
+/* 
+font-family: 'Inconsolata', monospace;
+font-family: 'Space Mono', monospace;
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+
+ /* Default style */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ body {
+     height: 100vh;
+     overflow: hidden;
+ }
+ :root {
+     --fnt-inconsolata: 'Inconsolata', monospace;
+     --fnt-space-mono: 'Space Mono', monospace;
+ }
+ /* Header */
+ header#header {
+     font-family: var(--fnt-inconsolata);
+     padding: 1rem 4.8125rem;
+ }
+ 
+ /* Main Content */
+ main#main {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+ .main_content {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     align-items: center;
+     padding: 0 4.8125rem;
+ }
+ 
+ .scarerow img {
+     width: 85%;
+ }
+ 
+ .notice {
+     font-family: var(--fnt-space-mono);
+     width: 100%;
+ }
+ .notice p {
+    width: 265px;
+    margin: 2rem 0;
+}
+
+.notice h1 {
+    font-size: 3rem;
+}
+
+header#header h2 {
+    font-size: 24px;
+}
+a.btn {
+    text-decoration: none;
+    background: #333333;
+    color: #fff;
+    font-size: 14px;
+    padding: 1.5rem 2rem;
+}
+/* Footer */
+footer span {
+    font-size: 14px;
+    color: #BDBDBD;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    font-family: var(--fnt-space-mono);
+}
+
+/* Responsive */
+@media only screen and (max-width: 850px){
+    .scarerow {
+        width: 100%;
+    }
+    .main_content {
+        flex-direction: column;
+        padding: 0 1.8125rem !important;
+    }
+    header#header {
+        padding: 1rem 1.8125rem;
+    }
+}
+@media only screen and (max-width: 975px){
+    .notice h1 {
+        font-size: 2.5rem !important;
+    }
+}
+@media screen and (min-width: 320px) {
+    .notice h1 {
+        font-size: 1.5rem;
+    }
+    a.btn {
+        font-size: 13px;
+        padding: 0.8rem 1rem;
+    }
+    footer span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 850px) {
+	.scarerow img {
+        width: 70%;
+    }
+}
+
